@@ -19,5 +19,13 @@ public class Time{
         return this.nome;
     }
 
+    public void incNumeroTitulosMundiais(){
+        this.nTitulosMundiais++;
+    }
+
+    public int getNumeroTitulosMundiais(){
+        return this.nTitulosMundiais;
+    }
+
 
 }

@@ -8,12 +8,28 @@ public class Partida{
         this.timeB = timeB;
     }
 
+    public Time getTimeA() {
+        return timeA;
+    }
+
+    public Time getTimeB() {
+        return timeB;
+    }
+
     public void incrementaGolA(){
         gols[0]++;
     }
 
+    public int getGolA(){
+        return gols[0];
+    }
+
     public void incrementaGolB(){
         gols[1]++;
+    }
+
+    public int getGolB(){
+        return gols[1];
     }
 
     public void imprimePlacar(){
