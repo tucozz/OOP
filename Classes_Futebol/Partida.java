@@ -1,25 +1,22 @@
 public class Partida{
     private Time timeA;
     private Time timeB;
-    private int golsA;
-    private int golsB;
+    private int[] gols = new int[2];
 
     public Partida(Time timeA, Time timeB){
         this.timeA = timeA;
         this.timeB = timeB;
-        golsA = 0;
-        golsB = 0;
     }
 
     public void incrementaGolA(){
-        golsA++;
+        gols[0]++;
     }
 
     public void incrementaGolB(){
-        golsB++;
+        gols[1]++;
     }
 
     public void imprimePlacar(){
-        System.out.println("PLACAR: " + timeA.getNome() + "/ " + golsA + " - " + golsB + " \\" + timeB.getNome());
+        System.out.println("PLACAR: " + timeA.getNome() + "/ " + gols[0] + " - " + gols[1] + " \\" + timeB.getNome());
     }
 }
