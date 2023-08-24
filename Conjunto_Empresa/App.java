@@ -2,7 +2,7 @@ import java.util.HashSet;
 
 public class App{
     public static void main(String[] args){
-        Empresa empresa = new Empresa();
+        Empresa empresa = new Empresa("Empresa1");
 
         Departamento departamento1 = new Departamento("Teste1");
         empresa.addDepartamento(departamento1);

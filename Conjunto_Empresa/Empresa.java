@@ -1,7 +1,12 @@
 import java.util.HashSet;
 
 public class Empresa{
+    private String nome;
     private HashSet<Departamento> departamentos = new HashSet<>();
+
+    public Empresa(String nome){
+        this.nome = nome;
+    }
 
     public HashSet<Departamento> getDepartamentos() {
         HashSet<Departamento> departamentosCopy = new HashSet<>(departamentos);
