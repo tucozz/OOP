@@ -23,11 +23,21 @@ public class Empresa{
 
     public float mediaSalarial(){
         float soma = 0;
+        HashSet<Funcionario> allFuncionarios = new HashSet<>();   
         for(Departamento d : this.departamentos){
-            soma += d.mediaSalarial();
+            for(Funcionario f : d.funcionarios){
+                allFuncionarios.add(f);
+            }
         }
 
-        return soma / (float)this.departamentos.size();
+        if(allFuncionarios.size() == 0)
+            return 0;
+
+        for(Funcionario f : allFuncionarios){
+            soma += f.getSalario();
+        }
+
+        return soma / (float)allFuncionarios.size();
     }
 
 }
