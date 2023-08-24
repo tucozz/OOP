@@ -21,4 +21,13 @@ public class Empresa{
         return this.departamentos.remove(departamento);
     }
 
+    public float mediaSalarial(){
+        int soma = 0;
+        for(Departamento d : this.departamentos){
+            soma += d.mediaSalarial();
+        }
+
+        return soma / (float)this.departamentos.size();
+    }
+
 }
