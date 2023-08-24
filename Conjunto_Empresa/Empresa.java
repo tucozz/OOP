@@ -7,10 +7,6 @@ public class Empresa{
         HashSet<Departamento> departamentosCopy = new HashSet<>(departamentos);
         return departamentosCopy;
     }
-
-    public void setDepartamentos(HashSet<Departamento> departamentos) {
-        this.departamentos = departamentos;
-    }
     
     public void addDepartamento(Departamento departamento){
         this.departamentos.add(departamento);
