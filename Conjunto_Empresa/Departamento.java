@@ -33,7 +33,7 @@ public class Departamento{
     }
 
     public float mediaSalarial(){
-        int soma = 0;
+        float soma = 0;
         for(Funcionario f : this.funcionarios){
             soma += f.getSalario();
         }
