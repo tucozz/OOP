@@ -17,4 +17,8 @@ public class Gol extends Lance{
         this.assistente = assistente;
     }
     
+    @Override
+    public String toString(){
+        return "Gol feito por " + getAutor().getNome() + " no minuto " + getMinuto();
+    }
 }

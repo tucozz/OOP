@@ -3,10 +3,11 @@ import java.util.List;
 
 public class PartidaDetalhada extends Partida {
 
-    private List<Lance> lances = new LinkedList<>();
+    private List<Lance> lances;
 
     public PartidaDetalhada(Time timeA, Time timeB) {
         super(timeA, timeB);
+        this.lances = new LinkedList<>();
     }
 
     public void realizaGol(Time timeMarcador, Time timeSofredor, Jogador autor, int minuto){
@@ -37,6 +38,10 @@ public class PartidaDetalhada extends Partida {
     public void realizaCartaoVermelho(float minuto, Jogador autor){
         Cartao cartao = new CartaoVermelho(minuto, autor);
         lances.add(cartao);
+    }
+
+    public List<Lance> getLances(){
+        return new LinkedList<>(lances);
     }
     
 }
