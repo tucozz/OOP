@@ -6,4 +6,12 @@ public abstract class Lance {
         this.minuto = minuto;
         this.autor = autor;
     }
+
+    public float getMinuto(){
+        return minuto;
+    }
+
+    public Jogador getAutor(){
+        return autor;
+    }
 }
