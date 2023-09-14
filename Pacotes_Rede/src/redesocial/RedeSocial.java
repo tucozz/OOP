@@ -1,9 +1,10 @@
 package redesocial;
 import java.util.HashMap;
+import java.util.Map;
 
 public class RedeSocial {
     private String nome;
-    private HashMap<Integer, Usuario> usuarios = new HashMap<>();
+    private Map<Integer, Usuario> usuarios = new HashMap<>();
 
     public RedeSocial(String nome){
         this.nome = nome;
@@ -25,5 +26,10 @@ public class RedeSocial {
         for(Usuario u : this.usuarios.values()){
             u.removeAmigo(usuario);
         }
+    }
+
+    public Map<Integer, Usuario> getUsuarios(){
+        Map<Integer, Usuario> map2 = new HashMap<Integer, Usuario>(usuarios);
+        return map2;
     }
 }
