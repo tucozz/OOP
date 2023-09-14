@@ -1,6 +1,11 @@
-## Getting Started
+## Instructions
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Altere o grafo de amigos no arquivo App.java
+- rode o comando para gerar um grafo com dot
+
+    ```sh
+   java -cp bin App | dot -Tpng -o saida.png
+   ```
 
 ## Folder Structure
 
@@ -15,4 +20,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 ## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
