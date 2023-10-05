@@ -9,14 +9,6 @@ public class Aluno {
     private float renda_familiar;
     private LocalDate nascimento;
 
-    public Aluno(String nome, String matricula, float cr, float renda_familiar, LocalDate nascimento){
-        this.nome = nome;
-        this.matricula = matricula;
-        this.cr = cr;
-        this.renda_familiar = renda_familiar;
-        this.nascimento = nascimento;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -35,5 +27,25 @@ public class Aluno {
 
     public LocalDate getNascimento() {
         return nascimento;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public void setCr(float cr) {
+        this.cr = cr;
+    }
+
+    public void setRenda_familiar(float renda_familiar) {
+        this.renda_familiar = renda_familiar;
+    }
+
+    public void setNascimento(LocalDate nascimento) {
+        this.nascimento = nascimento;
     }
 }
