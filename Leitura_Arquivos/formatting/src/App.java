@@ -13,6 +13,7 @@ public class App {
         Scanner s = new Scanner(fin, "ISO-8859-1")){
             Locale brLocale = Locale.forLanguageTag("pt-BR");
 			NumberFormat nf = NumberFormat.getInstance(brLocale);
+            // criar nova lista
             while(s.hasNextLine()){
                 Aluno aluno = new Aluno();
                 String line = s.nextLine();
@@ -25,11 +26,12 @@ public class App {
                     aluno.setNascimento(LocalDate.parse(lineScanner.next()));
                     aluno.setRenda_familiar(nf.parse(lineScanner.next()).floatValue());
                     String token = lineScanner.next();
-                    System.out.println("Leu: [" + token + "]");
                 }
+                //adicionar aluno na lista
             }
         }catch(Exception e){
             e.printStackTrace();
         }
+        //calcular tudo usando aquela lista
     }
 }
